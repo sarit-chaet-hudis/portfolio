@@ -1,0 +1,127 @@
+.image {
+    min-width: 24vw;
+    min-height: 24vw;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    display: flex;
+    color: white;
+    font-size: 1.3rem;
+
+}
+
+/* image background colors */
+.img1, .img6 {
+    background: salmon;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}
+
+.img2 , .img4, .img7 {
+    background: var(--bg-yellow);
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}
+
+.img3 , .img5, .img8 {
+    background: dodgerblue;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}
+
+/* general image behavior */
+
+.image:hover{
+    opacity: 1;
+}
+.image:hover::after {
+    transform: scale(120%);
+}
+
+.image::before {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 40%;
+    z-index: 200;
+}
+
+.image::after {
+    content:'';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* unique image attributes */
+.img1::before {
+    content: "enjoys chairs";
+}
+
+.img1::after {
+    background-image: url("/images/chair.png");
+}
+
+.img2::before {
+    content: "has brain";
+    /* color: #333; */
+}
+
+.img2::after {
+    background-image: url("/images/brain.png");
+}
+
+.img3::before {
+    content: "drinks occasionally";
+    color: #333;
+}
+
+.img3::after {
+    background-image: url("/images/beer.png");
+    background-size: 35%;
+}
+
+.img4::before {
+    content: 'dog person';
+    color: #333;
+}
+
+.img4::after{
+    background-image: url("/images/dog.png");
+}
+
+.img5::before {
+    content: 'who you gonna call';
+    color: #333;
+}
+
+.img5::after {
+    background-image: url("/images/goats-butter.png");
+
+}
+
+.img6::before {
+    content: 'food? yes.';
+}
+
+.img6::after {
+    background-image: url("/images/pastry.png");
+    background-size: 65%;
+}
+
+.img7::before {
+    content: 'likes shiny objects';
+}
+
+.img7::after {
+    background-image: url("/images/glitter-star.png");
+    background-size: 65%;
+}

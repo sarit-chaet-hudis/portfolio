@@ -11,7 +11,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/mobile.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/image-grid.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@200;300;400;700&display=swap"
       rel="stylesheet"
@@ -21,36 +24,71 @@
   <body>
     <div class="parallax">
       <div class="header-text">
-          <h1>web dev by sarit</h1>
-          
-            because even your grandma's hampster needs an online presence
-          
-          <br>
-          <i class='fas fa-chevron-down fa-2x'></i>  
+        <h1>web dev by sarit</h1>
+
+        because even your grandma's hampster needs an online presence
+
+        <br />
+        <a href="#about-text"><i class="fas fa-chevron-down fa-2x"></i></a>
       </div>
     </div>
     <div class="text-cont">
-      <div class="inner-text">
-        Whatever kombucha ugh shabby chic sriracha intelligentsia. Chicharrones
-        shabby chic meggings neutra jianbing quinoa banh mi craft beer heirloom.
-        Ennui echo park literally meditation woke cardigan chillwave, slow-carb
-        tofu fam microdosing cloud bread trust fund.
-    <br>
-        
-    </div>
+      <div class="inner-text" id="about-text">
+        Full-stack web developer with super learning skills and an eye for
+        detail.
+        <br />
+        Background in cognitive science, e-learning and project management.
+        <br /><br />
+        I'm a team player by nature and enjoy working in inter-disciplinary
+        teams and achieving new goals.
+        <br />
+        <div class="tools">
+          <!-- TODO hover icons effect with tooltip -->
+          <i class="far fa-file-code fa-3x" tool-name="HTML"></i>
+
+          <i class="fab fa-html5 fa-3x"></i>
+          <i class="fab fa-node-js fa-3x"></i>
+          <i class="fab fa-react fa-3x"></i>
+          <i class="fas fa-database fa-3x"></i>
+          <i class="fab fa-python fa-3x"></i>
+        </div>
+      </div>
     </div>
     <div class="img-grid">
-      <div class="img1">
-          
-      </div>
-      <div class="img2"></div>
-      <div class="img3"></div>
-      <div class="img4"></div>
-      <div class="img5"></div>
-      <div class="img6"></div>
-      <div class="img7"></div>
-      <div class="img8"></div>
+      <div class="img1 image"></div>
+      <!-- TODO: title text opacity -->
+      <!-- TODO: make into links? -->
+      <div class="img2 image"></div>
+      <div class="img3 image"></div>
+      <div class="img4 image"></div>
+      <div class="img5 image"></div>
+      <div class="img6 image"></div>
+      <div class="img7 image"></div>
+      <div class="img8 image"></div>
     </div>
-    <div class="footer">&copy; 2021 sarit chaet hudis</div>
+    <div class="footer">
+      <div class="item">&copy; 2021 sarit chaet hudis</div>
+      <div class="item">
+        <a href="https://www.linkedin.com/in/sarithayathudis/"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+      </div>
+      <div class="item">
+        <a href="https://github.com/sarit-chaet-hudis"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+      <div class="item cv">
+      <a href="https://github.com/sarit-chaet-hudis"
+        ><i class="far fa-file"></i> CV</a>
+    </div>
+    </div>
+    
+    <div class="credits">
+      <a href="https://pngtree.com/so/Creative"
+        >Creative png from pngtree.com/</a
+      >
+    </div>
+    
   </body>
 </html>
