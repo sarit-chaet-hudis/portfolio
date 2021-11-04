@@ -15,20 +15,23 @@ h1 {
 .parallax, .text-cont {
   display: flex;
   flex-direction: column;
-  min-height: 200px;
   justify-content: flex-end;
   align-items: center;
 }
 
 .parallax {
     background-image: url("/images/hamster-cover-narrow.jpg");
-    /* background-size: cover ; */
+    background-size: cover ;
     background-attachment: fixed;
-    /* background-position-y: center; */
-    height: 50vh;
+    /* background-position-y: 50px; */
+    /* background-position-x: center; */
+    /* height: 50vh; */
+    min-height: 450px;
+    width: 100%;
+
 }
 
-.inner-text {
+.header-text {
     max-width: 800px;
     text-align: center;
     padding: 30px;
@@ -41,16 +44,57 @@ h1 {
 
 }
 
+.inner-text {
+    text-align: center;
+    padding: 30px;
+    color: black;
+}
+
 .img-grid {
     display: grid;
     grid-template-columns: repeat(4, auto);
 }
 
 .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8 {
-    min-width: 30vw;
-    min-height: 30vw;
-    border: 1px solid black
+    min-width: 24vw;
+    min-height: 24vw;
+    border: 1px solid black;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+
 }
+
+.img1 {
+    background: salmon;
+}
+
+.img1::before {
+    content: "enjoys chairs";
+    z-index: 20000;
+}
+
+.img1::after {
+    content:'';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-image: url("/images/chair.png");
+    background-size: contain;
+    transition: all 1s ease-in;
+
+}
+
+.img1:hover::after {
+    transform: scale(120%);
+    background-blend-mode: soft-light;
+}
+
+
+
+
 
 .footer {
     min-height: 100px;
