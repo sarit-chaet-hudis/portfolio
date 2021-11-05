@@ -1,5 +1,11 @@
 @media (max-width:600px) {
     
+    /* .img-grid {
+        grid-template-columns: repeat(3, auto);
+    }
 
-
+    .image {
+        min-width: 33.33vw;
+        min-height: 33.33vw;
+    } */
 }

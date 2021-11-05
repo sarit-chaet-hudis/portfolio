@@ -6,28 +6,33 @@
     text-align: center;
     display: flex;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
 
 }
 
 /* image background colors */
 .img1, .img6 {
     background: salmon;
-    opacity: 0.8;
-    transition: all 0.3s ease-in-out;
 }
 
-.img2 , .img4, .img7 {
+.img2 , .img7 {
     background: var(--bg-yellow);
-    opacity: 0.8;
-    transition: all 0.3s ease-in-out;
 }
 
-.img3 , .img5, .img8 {
-    background: dodgerblue;
-    opacity: 0.8;
-    transition: all 0.3s ease-in-out;
+.img4 , .img5, .img8 {
+    background: var(--bg-blue);
 }
+
+.img3, .img8 {
+    background: var(--bg-gray);
+}
+
+.img5 {
+    background-color: var(--bg-green);
+}
+
 
 /* general image behavior */
 
@@ -81,7 +86,7 @@
 
 .img3::before {
     content: "drinks occasionally";
-    color: #333;
+    /* color: #333; */
 }
 
 .img3::after {
@@ -124,4 +129,12 @@
 .img7::after {
     background-image: url("/images/glitter-star.png");
     background-size: 65%;
+}
+
+.img8::before {
+    content: "FAMILY WOMAN";
+}
+
+.img8::after {
+    background-image: url("/images/lego.png");
 }

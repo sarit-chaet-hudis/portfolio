@@ -1,6 +1,8 @@
 :root {
     --bg-yellow: #ffcf2b;
-    --bg-green: 
+    --bg-green: #a6ffa1;
+    --bg-blue: #84bcda;
+    --bg-gray: #595758;
 }
 
 * {
@@ -79,6 +81,19 @@ i {
 .img-grid {
     display: grid;
     grid-template-columns: repeat(4, auto);
+}
+
+.form-area {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .cv i{
