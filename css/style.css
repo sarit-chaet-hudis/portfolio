@@ -36,8 +36,6 @@ h1 {
     background-image: url("/images/hamster-cover-narrow.jpg");
     background-size: cover ;
     background-attachment: fixed;
-    /* background-position-y: 50px; */
-    /* background-position-x: center; */
     /* height: 50vh; */
     min-height: 450px;
     width: 100%;
@@ -66,10 +64,13 @@ i {
     margin:  20px;
 }
 
+.center {
+    text-align: center;
+}
+
 .tools i:hover {
     transform: scale(120%)
 }
-
 
 .inner-text {
     text-align: center;
@@ -83,10 +84,24 @@ i {
     grid-template-columns: repeat(4, auto);
 }
 
-.form-area {
+.contact-area {
     display: flex;
     justify-content: center;
     padding: 30px;
+}
+
+.profile-img {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.profile-img img {
+    margin: 30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid salmon;
 }
 
 .form {
@@ -94,6 +109,26 @@ i {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.form > * {
+    margin: 3px;
+    padding: 5px;
+}
+
+.form button {
+    width: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--bg-blue);
+/* TODO: find out why transition wont work on hover */
+    transition: all 0.3 ease-in-out;
+}
+
+.form button:hover {
+    background-color: salmon;
 }
 
 .cv i{

@@ -101,6 +101,7 @@
 
 .img4::after{
     background-image: url("/images/dog.png");
+    background-size: 50%;
 }
 
 .img5::before {
