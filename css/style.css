@@ -112,3 +112,9 @@ i {
 .footer a:hover {
     color: salmon;
 }
+
+.credits {
+    text-align: center;
+    font-size: 0.8rem;
+    color: lightgray;
+}
