@@ -59,6 +59,7 @@ a {
     color: salmon;
     display: flex;
     justify-content: space-around;
+    margin-top: 15px;
 }
 i {
     margin:  20px;
@@ -137,19 +138,16 @@ i {
 }
 
 .footer {
+    background: var(--bg-gray);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100px;
     padding: 30px;
+    color: white;
 }
 
 .footer a:hover {
     color: salmon;
 }
 
-.credits {
-    text-align: center;
-    font-size: 0.8rem;
-    color: lightgray;
-}
