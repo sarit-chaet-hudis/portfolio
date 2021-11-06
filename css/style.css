@@ -69,7 +69,22 @@ a {
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
+    position: relative;
 }
+
+
+/* tools desciption on hover */
+.tools div[tool-desc]:hover::after {
+    content: attr(tool-desc);
+    color: gray;
+    position: absolute;
+    top: 60px;
+    width: 150px;
+    left: 35%;
+    font-size: 1rem;
+}
+
+
 
 /* general icon definitions */
 .header-text i,

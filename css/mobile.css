@@ -1,10 +1,8 @@
-
 @media (min-width: 1200px) {
     .project {
         width: 600px;
         height: 400px;
     }
-
 }
 
 /* for smaller screen or tablet */
@@ -40,14 +38,18 @@
 }
 
 @media (max-width: 500px) {
+    .menu-wrap {
+        visibility: hidden;
+    }
 
-.menu-wrap {
-    visibility: hidden;
-}
+    .tools .fa-3x {
+        font-size: 2rem;
+    }
 
-.tools .fa-3x {
-    font-size: 2rem;
-}
+    .tools div[tool-desc]:hover::after {
+        top: 50px;        
+        left: 25%;
+    }
 
     .img-grid {
         grid-template-columns: repeat(2, auto);
@@ -77,18 +79,17 @@
         height: 100px;
     }
 
-    .form input, .form textarea {
+    .form input,
+    .form textarea {
         width: 100%;
     }
 
-
-.footer .item {
-    margin: 0 7px;
-}
+    .footer .item {
+        margin: 0 7px;
+    }
 
     .footer i {
         margin: 0;
         padding: 0;
     }
-
 }
