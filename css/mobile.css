@@ -41,6 +41,10 @@
 
 @media (max-width: 500px) {
 
+.menu-wrap {
+    visibility: hidden;
+}
+
 .tools .fa-3x {
     font-size: 2rem;
 }
