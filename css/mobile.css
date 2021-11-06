@@ -7,6 +7,7 @@
 
 }
 
+/* for smaller screen or tablet */
 @media (max-width: 900px) {
     .img-grid {
         grid-template-columns: repeat(3, auto);
@@ -32,9 +33,18 @@
         width: 70vw;
         height: 40vw;
     }
+
+    .project-description {
+        line-height: 1rem;
+    }
 }
 
 @media (max-width: 500px) {
+
+.tools .fa-3x {
+    font-size: 2rem;
+}
+
     .img-grid {
         grid-template-columns: repeat(2, auto);
     }
@@ -44,4 +54,37 @@
         min-height: 50vw;
         font-size: 1.2rem;
     }
+
+    .projects {
+        padding: 20px 0;
+    }
+
+    .project {
+        width: 100vw;
+        height: 60vw;
+    }
+
+    .projects-container i {
+        margin: 8px;
+    }
+
+    .profile-img img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .form input, .form textarea {
+        width: 100%;
+    }
+
+
+.footer .item {
+    margin: 0 7px;
+}
+
+    .footer i {
+        margin: 0;
+        padding: 0;
+    }
+
 }
