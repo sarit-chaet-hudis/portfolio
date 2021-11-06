@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/css/normalize.css" />
   
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/menu.css">
     <link rel="stylesheet" href="/css/image-grid.css" />
     <link rel="stylesheet" href="/css/mobile.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -26,7 +27,17 @@
     <title>Sarit Chaet Hudis</title>
   </head>
   <body>
-    <div class="parallax">
+    <div class="menu-wrap">
+      <div class="menu">
+          <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="parallax" id="home">
       <div class="header-text">
         <h1>web dev by sarit</h1>
 
@@ -36,7 +47,7 @@
         <a href="#about-text"><i class="fas fa-chevron-down fa-2x"></i></a>
       </div>
     </div>
-    <div class="about-cont" id="about-text">
+    <div class="about-cont" id="about">
       <div class="inner-text" >
         Hi! I'm a full-stack web developer with super learning skills and an eye for
         detail.
@@ -82,7 +93,7 @@
               <li><a href="https://github.com/sarit-chaet-hudis/portfolio">
                 <i class="fab fa-github"></i> repo</a></li>
             </ul>
-            <img src="/images/pastry.png" alt="project preview" class="project-img">
+            <img src="/images/lemon.jpg" alt="project preview" class="project-img">
 
             </div>
         </div>

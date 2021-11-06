@@ -49,7 +49,7 @@
     text-align: center;
     font-weight: 700;
     padding-top: 40%;
-    z-index: 200;
+    z-index: 20;
 }
 
 .image::after {
@@ -73,6 +73,8 @@
 
 .img1::after {
     background-image: url("/images/chair.png");
+    background-size: 65%;
+
 }
 
 .img2::before {
@@ -101,7 +103,7 @@
 
 .img4::after{
     background-image: url("/images/dog.png");
-    background-size: 60%;
+    background-size: 50%;
 }
 
 .img5::before {
@@ -111,7 +113,8 @@
 
 .img5::after {
     background-image: url("/images/goats-butter.png");
-
+    background-size: 70%;
+    background-position-y: 80%;
 }
 
 .img6::before {
