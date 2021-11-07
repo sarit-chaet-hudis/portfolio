@@ -72,6 +72,10 @@ a {
     position: relative;
 }
 
+.tools i:hover {
+    transform: scale(120%);
+    transition: all 0.3s ease-in-out;
+}
 
 /* tools desciption on hover */
 .tools div[tool-desc]:hover::after {
@@ -96,9 +100,7 @@ a {
     text-align: center;
 }
 
-.tools i:hover {
-    transform: scale(120%);
-}
+
 
 .inner-text {
     text-align: center;
