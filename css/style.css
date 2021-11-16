@@ -199,6 +199,10 @@ a {
   background-color: salmon;
 }
 
+.form textarea {
+  resize: none;
+}
+
 .footer {
   background: var(--bg-gray);
   display: flex;
