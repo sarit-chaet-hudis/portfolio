@@ -1,6 +1,6 @@
 ## Live link: https://sarit-portfolio-design.netlify.app/
 
-[Screenshot]()
+[Screenshot](https://github.com/sarit-chaet-hudis/portfolio/blob/main/images/screenshot.JPG)
 
 A portfolio design and a bit about myself. Featuring shiny colors!
 
